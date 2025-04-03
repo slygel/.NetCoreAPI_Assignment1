@@ -9,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 builder.Services.AddScoped<ITaskService, TaskService>();
-builder.Services.AddSingleton<TaskMapper>();
+builder.Services.AddSingleton<ITaskMapper,TaskMapper>();
 
 builder.Services.AddSwaggerGen(c =>
 {

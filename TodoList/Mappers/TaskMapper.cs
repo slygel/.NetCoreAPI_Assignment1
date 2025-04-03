@@ -3,7 +3,7 @@ using TodoList.Entites;
 
 namespace TodoList.Mappers;
 
-public class TaskMapper
+public class TaskMapper : ITaskMapper
 {
     public TaskResponseDto? ToResponseDto(TaskItem task)
     {

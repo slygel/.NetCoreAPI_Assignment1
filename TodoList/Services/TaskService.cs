@@ -8,9 +8,9 @@ namespace TodoList.Services;
 public class TaskService : ITaskService
 {
     private readonly ITaskRepository _taskRepository;
-    private readonly TaskMapper _mapper;
+    private readonly ITaskMapper _mapper;
     
-    public TaskService(ITaskRepository taskRepository, TaskMapper mapper)
+    public TaskService(ITaskRepository taskRepository, ITaskMapper mapper)
     {
         _taskRepository = taskRepository;
         _mapper = mapper;
